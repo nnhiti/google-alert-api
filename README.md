@@ -43,3 +43,6 @@ alert.setHowOften(HowOftenBean.ONCE_A_DAY_VAL);
 alert.setSearchQuery("your new query");
 service.updateAlert(alert);
 </pre>
+<br>
+Please contact me at nnhiti@gmail.com if you found any issues.
+Thanks for your using.
