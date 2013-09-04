@@ -7,13 +7,13 @@ Usage
 --
 <pre>
 // First of All, we have to login.
-GAService service = new GAService("yourEmail", "yourPassword");
+GAService service = new GAService("yourGmail", "yourPassword");
 service.doLogin();
 </pre>
 <br>
 <pre>
 // Get All Alert.
-List<AlertBean> lstAlert = service.getAlerts();
+List&lt;AlertBean&gt; lstAlert = service.getAlerts();
 </pre>
 <br>
 <pre>
@@ -28,7 +28,7 @@ service.createAlert(alert);
 <br>
 <pre>
 // Delete Alert.
-List<String> lstAlertId = new ArrayList<String>();
+List&lt;String&gt; lstAlertId = new ArrayList&lt;String&gt;();
 lstAlertId.add(alertId);
 service.deleteAlerts(lstAlertId);
 </pre>
@@ -43,5 +43,5 @@ alert.setSearchQuery("your new query");
 service.updateAlert(alert);
 </pre>
 <br>
-Please contact me at nnhiti@gmail.com if you found any issues.
+Please contact me at nnhiti@gmail.com if you found any issues.<br>
 Happy coding.
