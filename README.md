@@ -35,7 +35,6 @@ service.deleteAlerts(lstAlertId);
 <br>
 <pre>
 // Update Alert.
-List<String> lstAlertId = new ArrayList<String>();
 AlertBean alert = new AlertBean();
 alert.setId(editAlertId);
 alert.setHowMany(HowManyBean.ONLY_THE_BEST_RESULTS_VAL);
@@ -45,4 +44,4 @@ service.updateAlert(alert);
 </pre>
 <br>
 Please contact me at nnhiti@gmail.com if you found any issues.
-Thanks for your using.
+Happy coding.
