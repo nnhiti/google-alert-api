@@ -6,41 +6,68 @@ A java library allow user get, create, delete, update google alert.
 Usage
 --
 <pre>
-// First of All, we have to login.
+// First of all, we have to login.
 GAService service = new GAService("yourGmail", "yourPassword");
 service.doLogin();
 </pre>
 <br>
 <pre>
-// Get All Alert.
+// Get all alerts.
 List&lt;AlertBean&gt; lstAlert = service.getAlerts();
 </pre>
 <br>
 <pre>
-// Create Alert.
-AlertBean alert = new AlertBean();
-alert.setHowMany(HowManyBean.ONLY_THE_BEST_RESULTS_VAL);
-alert.setHowOften(HowOftenBean.ONCE_A_DAY_VAL);
-alert.setResultType(ResultTypeBean.BLOGS_VAL);
-alert.setSearchQuery("fakeeeetttbook");
-service.createAlert(alert);
+// Get alert by id.
+Alert alert = service.getAlertById(alertId);
 </pre>
 <br>
 <pre>
-// Delete Alert.
+// Get alert by search query.
+List&lt;Alert&gt; lstAlert = service.getAlertsByQuery("Your Query");
+</pre>
+<br>
+<pre>
+// Create alert.
+Alert alert = new Alert();
+alert.setHowMany(HowMany.ONLY_THE_BEST_RESULTS);
+alert.setHowOften(HowOften.ONCE_A_DAY);
+alert.setResultType(ResultType.EVERYTHING);
+alert.setSearchQuery("Your Query");
+alert = service.createAlert(alert);
+</pre>
+<br>
+<pre>
+// Delete an alert.
+service.deleteAlerts(alertId);
+</pre>
+<br>
+<pre>
+// Delete list of alerts.
 List&lt;String&gt; lstAlertId = new ArrayList&lt;String&gt;();
 lstAlertId.add(alertId);
 service.deleteAlerts(lstAlertId);
 </pre>
 <br>
 <pre>
-// Update Alert.
+// Update alert.
 AlertBean alert = new AlertBean();
 alert.setId(editAlertId);
 alert.setHowMany(HowManyBean.ONLY_THE_BEST_RESULTS_VAL);
 alert.setHowOften(HowOftenBean.ONCE_A_DAY_VAL);
 alert.setSearchQuery("your new query");
 service.updateAlert(alert);
+</pre>
+<br>
+<pre>
+// Get List of alerts need to be verified.
+List&lt;Alert&gt; lstAlert = service.getVerifyAlerts();
+</pre>
+<br>
+<pre>
+// Verify list of alerts.
+List&lt;String&gt; lstAlertId = new ArrayList&lt;String&gt;();
+lstAlertId.add(alertId);
+service.verifyAlerts(lstAlertId);
 </pre>
 <br>
 Please contact me at nnhiti@gmail.com if you found any issues.<br>
