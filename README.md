@@ -52,8 +52,8 @@ service.deleteAlerts(lstAlertId);
 // Update alert.
 AlertBean alert = new AlertBean();
 alert.setId(editAlertId);
-alert.setHowMany(HowManyBean.ONLY_THE_BEST_RESULTS_VAL);
-alert.setHowOften(HowOftenBean.ONCE_A_DAY_VAL);
+alert.setHowMany(HowMany.ONLY_THE_BEST_RESULTS);
+alert.setHowOften(HowOften.ONCE_A_DAY);
 alert.setSearchQuery("your new query");
 service.updateAlert(alert);
 </pre>
