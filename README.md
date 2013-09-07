@@ -1,7 +1,7 @@
 google-alert-api
 ================
 
-A java library allow user get, create, delete, update google alert.
+Java Google Alerts API provides you with a lightweight library especially designed to help developers create, delete and update Google alerts within their applications.
 
 Usage
 --
