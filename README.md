@@ -3,6 +3,16 @@ google-alert-api
 
 Java Google Alerts API provides you with a lightweight library especially designed to help developers create, delete and update Google alerts within their applications.
 
+Required libraries
+--
+<pre>
+commons-logging-1.1.1.jar
+httpclient-4.2.1.jar
+httpcore-4.2.1.jar
+httpmime-4.2.1.jar
+jsoup-1.7.2.jar
+</pre>
+
 Usage
 --
 <pre>
