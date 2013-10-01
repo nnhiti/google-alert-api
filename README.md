@@ -17,6 +17,7 @@ Usage
 <pre>
 // First of all, we have to login.
 GAService service = new GAService("yourGmail", "yourPassword");
+// return empty string if login successful else return an error string
 service.doLogin();
 </pre>
 <br>
@@ -36,7 +37,7 @@ List&lt;Alert&gt; lstAlert = service.getAlertsByQuery("Your Query");
 </pre>
 <br>
 <pre>
-// Create alert.
+// Create alert. return an alert id if created successful else return an error string
 Alert alert = new Alert();
 alert.setHowMany(HowMany.ONLY_THE_BEST_RESULTS);
 alert.setHowOften(HowOften.ONCE_A_DAY);
@@ -58,7 +59,7 @@ service.deleteAlerts(lstAlertId);
 </pre>
 <br>
 <pre>
-// Update alert.
+// Update alert. return empty string if updated successful else return an error string
 AlertBean alert = new AlertBean();
 alert.setId(editAlertId);
 alert.setHowMany(HowMany.ONLY_THE_BEST_RESULTS);
