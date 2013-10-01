@@ -9,7 +9,6 @@ Required libraries
 commons-logging-1.1.1.jar
 httpclient-4.2.1.jar
 httpcore-4.2.1.jar
-httpmime-4.2.1.jar
 jsoup-1.7.2.jar
 </pre>
 
