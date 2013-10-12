@@ -27,6 +27,11 @@ List&lt;AlertBean&gt; lstAlert = service.getAlerts();
 </pre>
 <br>
 <pre>
+// Get alert by deliver.
+Alert alert = service.getAlertByIdDeliver(DeliverTo.FEED);
+</pre>
+<br>
+<pre>
 // Get alert by id.
 Alert alert = service.getAlertById(alertId);
 </pre>
@@ -38,11 +43,13 @@ List&lt;Alert&gt; lstAlert = service.getAlertsByQuery("Your Query");
 <br>
 <pre>
 // Create alert. return an alert id if created successful else return an error string
+// Default deliver is email
 Alert alert = new Alert();
 alert.setHowMany(HowMany.ONLY_THE_BEST_RESULTS);
 alert.setHowOften(HowOften.ONCE_A_DAY);
 alert.setResultType(ResultType.EVERYTHING);
 alert.setSearchQuery("Your Query");
+alert.setDeliverTo(DeliverTo.FEED);
 alert = service.createAlert(alert);
 </pre>
 <br>
@@ -65,6 +72,7 @@ alert.setId(editAlertId);
 alert.setHowMany(HowMany.ONLY_THE_BEST_RESULTS);
 alert.setHowOften(HowOften.ONCE_A_DAY);
 alert.setSearchQuery("your new query");
+alert.setDeliverTo(DeliverTo.FEED);
 service.updateAlert(alert);
 </pre>
 <br>
