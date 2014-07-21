@@ -12,14 +12,17 @@ Usage
 --
 
 // First of all, we have to login. return true string if login successful else return false
-
+<pre>
 GAService service = new GAService("yourGmail", "yourPassword");
 service.doLogin();
+</pre>
 
 --
 // Get all alerts.
 
+<pre>
 List<Alert> lstAlert = service.getAlerts();
+</pre>
 
 --
 // Get alert by delivery.
