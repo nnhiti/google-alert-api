@@ -40,6 +40,7 @@ List<Alert> lstAlert = service.getAlertsByQuery("Your Query");
 // Create alert. return an alert id if created successful else return an error string
 // Default deliver is email
 
+<pre>
 Alert alert = new Alert();
 alert.setHowMany(HowMany.ONLY_THE_BEST_RESULTS);
 alert.setHowOften(HowOften.ONCE_A_DAY);
@@ -47,6 +48,7 @@ alert.setResultType(ResultType.EVERYTHING);
 alert.setSearchQuery("Your Query");
 alert.setDeliveryTo(DeliverTo.FEED);
 String id = service.createAlert(alert);
+</pre>
 
 --
 // Delete an alert.
