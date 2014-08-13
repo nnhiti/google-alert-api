@@ -3,6 +3,12 @@ google-alert-api v2
 
 A java library allow user get, create, delete, update google alert.
 
+Notes:
+--
+
+Fixed the issue can not create email alert (); please see the email that Google Alert using (may be the alert is using uppercase or lowercase)
+So GAService("nnhiti@gmail.com", "pass") will different with GAService("NNHITI@gmail.com", "pass")
+
 Required libraries
 --
 
