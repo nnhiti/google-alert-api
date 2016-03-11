@@ -3,12 +3,16 @@ google-alert-api v2
 
 A java library allow user get, create, delete, update google alert.
 
-Notes:
+Compiled with java version 1.7
+
+Issues:
 --
 
 Fixed the issue can not login to alert;
 
-Notes: Please see the email that Google Alert using (may be the alert is using uppercase or lowercase)
+Notes:
+--
+Please see the email that your Google Alert using (may be the alert is using uppercase or lowercase)
 So GAService("nnhiti@gmail.com", "pass") will different with GAService("NNHITI@gmail.com", "pass")
 
 Required libraries
