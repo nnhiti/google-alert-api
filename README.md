@@ -8,7 +8,7 @@ Compiled with java version 1.7
 Issues:
 --
 
-Fixed the issue can not login to alert;
+Fixed language issue, the language result is incorrect;
 
 Notes:
 --
