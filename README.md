@@ -5,6 +5,11 @@ A java library allow user get, create, delete, update google alert.
 
 Compiled with java version 1.7
 
+Updated Date:
+--
+
+11/08/2016 (Version 2) - UTC +08:00 - Singapore Time
+
 Issues:
 --
 
